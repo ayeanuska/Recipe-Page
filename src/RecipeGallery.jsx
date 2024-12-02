@@ -5,7 +5,7 @@ import RecipeViewer from "./RecipeViewer";
 const recipes = [
   {
     img: "https://www.amuserecipes.com/wp-content/uploads/2024/10/What-is-the-difference-between-Jhol-and-Momo-1.webp",
-    foodName: "M0M0",
+    foodName: "M0 : M0",
     intro: "Delicious nepalese dumplings",
     descr:
       "Momo is a delicious and popular dumpling filled with a variety of savory fillings typically served with a spicy dipping sauce.",

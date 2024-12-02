@@ -7,13 +7,20 @@ const RecipeViewer = ({ recipeData, CloseCard }) => {
   return (
     <div className="viewer-style">
       <img src={recipeData.img} />
-      <div className="details"></div>
-      <h2>{recipeData.foodName}</h2>
-      <div>{recipeData.descr}</div>
-      <div>{recipeData.ingredients}</div>
-      <button onClick={CloseRecipeViewer} className="Viewer-button">
-        Close
-      </button>
+      <div className="details">
+        <h1>{recipeData.foodName}</h1>
+        <div>{recipeData.descr}</div>
+        <ul>
+          <h2> Ingredients</h2>
+          {recipeData.ingredients.map((item) => {
+            return <li>{item}</li>;
+          })}
+        </ul>
+
+        <button onClick={CloseRecipeViewer} className="viewer-button">
+          Close
+        </button>
+      </div>
     </div>
   );
 };
