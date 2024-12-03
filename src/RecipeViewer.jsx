@@ -17,6 +17,9 @@ const RecipeViewer = ({ recipeData, CloseCard }) => {
           })}
         </ul>
 
+        <h2> Recipe </h2>
+        <div>{recipeData.recipe} </div>
+
         <button onClick={CloseRecipeViewer} className="viewer-button">
           Close
         </button>
