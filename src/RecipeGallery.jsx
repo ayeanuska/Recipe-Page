@@ -239,7 +239,6 @@ const RecipeGallery = () => {
 
         <button
           onClick={() => {
-            alert(searchVariable);
             searchTrigger();
           }}
         >
