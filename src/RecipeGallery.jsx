@@ -215,6 +215,11 @@ const RecipeGallery = () => {
 
   const handleOnChange = (event) => {
     setSearchVariable(event.target.value);
+    const filtered_recipe = original_recipes.filter((item) =>
+      item.foodName.toLowerCase().includes(event.target.value.toLowerCase())
+    );
+
+    setRecepies(filtered_recipe);
   };
 
   const searchTrigger = () => {
