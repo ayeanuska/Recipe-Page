@@ -117,7 +117,7 @@ h1 {
   align-items: center;
 }
 
-/* Responsive styles for smaller devices */
+/* Responsive styles for smaller devices
 @media (max-width: 1024px) {
   .gallery-style {
     gap: 50px;
@@ -140,4 +140,4 @@ h1 {
   .card-button {
     width: 80%;
   }
-}
+} */
