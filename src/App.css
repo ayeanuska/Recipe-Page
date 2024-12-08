@@ -116,3 +116,28 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+/* Responsive styles for smaller devices */
+@media (max-width: 1024px) {
+  .gallery-style {
+    gap: 50px;
+    margin-top: 3rem;
+  }
+
+  .card-style {
+    height: 50vh;
+    width: 45vw;
+  }
+
+  .card-style > img {
+    height: 250px;
+  }
+
+  .searchbar input {
+    width: 300px;
+  }
+
+  .card-button {
+    width: 80%;
+  }
+}
