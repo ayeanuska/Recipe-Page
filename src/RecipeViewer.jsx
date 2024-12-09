@@ -8,11 +8,14 @@ const RecipeViewer = ({ recipeData, CloseCard }) => {
     <div className="viewer-style d-flex flex-column align-items-center justify-content-center ">
       <div container>
         <div className="row justify-content-center">
-          <div className="col-12 col-md-8 col-lg-6" d-flex>
+          <div className="col-12 col-md-4 col-lg-6 ">
             <img
               src={recipeData.img}
               className="img-fluid rounded position-absolute top-0 start-0 "
             />
+          </div>
+
+          <div className="col-12 col-md-8 col-lg-6 d-flex ">
             <div className="details rounded p-5">
               <h2 className="text-center">{recipeData.foodName}</h2>
               <p>{recipeData.descr}</p>

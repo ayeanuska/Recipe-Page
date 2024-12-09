@@ -231,7 +231,7 @@ const RecipeGallery = () => {
   };
 
   return (
-    <div className="bg-dark text-white p-3 gallery-style">
+    <div className="bg-dark text-white pt-1 gallery-style">
       <h1 className="text-center m-5">Recipe Gallery</h1>
       <div className="searchbar d-flex justify-content-center mb-4">
         <input
