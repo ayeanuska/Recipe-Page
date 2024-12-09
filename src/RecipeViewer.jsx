@@ -5,7 +5,7 @@ const RecipeViewer = ({ recipeData, CloseCard }) => {
     CloseCard(false);
   };
   return (
-    <div className="viewer-style">
+    <div className="viewer-style ">
       <img src={recipeData.img} />
       <div className="details">
         <h1>{recipeData.foodName}</h1>

@@ -231,12 +231,13 @@ const RecipeGallery = () => {
   };
 
   return (
-    <div className="bg-dark text-white">
-      <h1>Recipe Gallery</h1>
-      <div className="searchbar">
+    <div className="bg-dark text-white p-3 gallery-style">
+      <h1 className="text-center m-5">Recipe Gallery</h1>
+      <div className="searchbar d-flex justify-content-center mb-4">
         <input
           type="text"
           name="search"
+          className="form-control w-50"
           placeholder="search here"
           value={searchVariable}
           onChange={handleOnChange}
@@ -252,7 +253,7 @@ const RecipeGallery = () => {
         </button>
       </div>
 
-      <div className="gallery-style">
+      <div className="gallery-style row g-4 justify-content-center mt-4">
         {recipes.map((item, index) => (
           <RecipeCard
             key={index}

@@ -1,8 +1,11 @@
+/* 
+
+css used before using bootstrap
 .root {
   text-align: center;
   margin: 0;
   padding: 0;
-}
+} 
 
 .gallery-style {
   padding: 2rem;
@@ -35,7 +38,7 @@ h1 {
 
 .searchbar button {
   background-color: green;
-}
+} 
 
 .card-button {
   background-color: green;
@@ -70,8 +73,12 @@ h1 {
 .card-style h3 {
   justify-content: center;
   text-align: center;
-}
+} */
 
+.gallerystyle {
+  width: 100vw;
+  min-height: 100vh;
+}
 .viewer-style {
   background-color: rgba(0, 0, 0, 0.706);
   backdrop-filter: blur(3px);
@@ -115,29 +122,27 @@ h1 {
   margin: 2rem;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
-/* Responsive styles for smaller devices
-@media (max-width: 1024px) {
-  .gallery-style {
-    gap: 50px;
-    margin-top: 3rem;
-  }
+.card-style img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-  .card-style {
-    height: 50vh;
-    width: 45vw;
-  }
+.card-style h2,
+.card-style h3 {
+  margin: 0.5rem 0;
+  text-align: center;
+}
 
-  .card-style > img {
-    height: 250px;
-  }
+.viewer-style img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
 
-  .searchbar input {
-    width: 300px;
-  }
-
-  .card-button {
-    width: 80%;
-  }
-} */
+.viewer-style .details {
+  max-width: 100%;
+}

@@ -6,14 +6,16 @@ const RecipeCard = ({ item, OpenCard, updateRecipe }) => {
     updateRecipe(item);
   };
   return (
-    <div className="card-style">
-      <img src={item.img} />
-      <h2>{item.foodName}</h2>
-      <h3>{item.intro}</h3>
+    <div className="card col-md-5 col-lg-3 bg-dark text-white p-3">
+      <div className="card-style card-body text-center">
+        <img src={item.img} className="card-img-top" />
+        <h5 className="card-title">{item.foodName}</h5>
+        <p className="card-text">{item.intro}</p>
 
-      <button onClick={OpenRecipeViewer} className="card-button">
-        View recipe
-      </button>
+        <button onClick={OpenRecipeViewer} className="btn btn-success">
+          View recipe
+        </button>
+      </div>
     </div>
   );
 };
