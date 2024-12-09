@@ -7,12 +7,9 @@ const RecipeViewer = ({ recipeData, CloseCard }) => {
   return (
     <div className="viewer-style d-flex flex-column align-items-center justify-content-center ">
       <div container>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center ">
           <div className="col-12 col-md-4 col-lg-6 ">
-            <img
-              src={recipeData.img}
-              className="img-fluid rounded position-absolute top-0 start-0 "
-            />
+            <img src={recipeData.img} className="img-fluid rounded" />
           </div>
 
           <div className="col-12 col-md-8 col-lg-6 d-flex ">
@@ -30,7 +27,7 @@ const RecipeViewer = ({ recipeData, CloseCard }) => {
               <div>{recipeData.recipe} </div>
               {/* className="viewer-button" */}
               <button
-                className="btn btn-danger m-5 w-100 "
+                className="btn btn-danger mt-5 w-100 "
                 onClick={CloseRecipeViewer}
               >
                 Close

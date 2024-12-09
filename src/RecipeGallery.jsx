@@ -253,7 +253,7 @@ const RecipeGallery = () => {
         </button>
       </div>
 
-      <div className="gallery-style row g-4 justify-content-center mt-4">
+      <div className="gallery-style row g-4 justify-content-center mt-4 p-1">
         {recipes.map((item, index) => (
           <RecipeCard
             key={index}
