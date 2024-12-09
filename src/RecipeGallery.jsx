@@ -231,7 +231,7 @@ const RecipeGallery = () => {
   };
 
   return (
-    <div>
+    <div className="bg-dark text-white">
       <h1>Recipe Gallery</h1>
       <div className="searchbar">
         <input
